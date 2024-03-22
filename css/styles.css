@@ -157,9 +157,10 @@ a {
   }
 
 
-.current {
+.nav-bar .current {
     position: relative;
     display: block;
+    color: var(--primary-brand-color);
   }
 
 .current::after {
@@ -174,6 +175,7 @@ a {
   right: 0;
   cursor: auto;
 }
+
 
 
 .header .contacts {
@@ -612,6 +614,14 @@ a {
 }
 
 
+.footer-icons-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
 .footer-socials-link {
   display: flex;
   align-items: center;
@@ -656,6 +666,7 @@ a {
 
 .modal {
   position: absolute;
+  padding: 72px 24px 24px;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -707,8 +718,8 @@ a {
 
 
 .modal-title {
+  margin-bottom: 16px;
   text-align: center;
-  margin-top: 72px;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -717,13 +728,7 @@ a {
   color: var(--primary-dark-color);
 }
 
-.modal-form {
-  margin-bottom: 16px;
-  padding-top: 16px;
-  padding-left: 24px;
-  padding-right: 24px;
-  display: block;
-}
+
 
 .modal-label {
   display: block;
@@ -835,7 +840,6 @@ a {
   justify-content: center;
   fill: transparent;
   margin-right: 8px;
-  margin-left: 24px;
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -930,11 +934,10 @@ a {
 
 .footer-subscribe-text {
   font-weight: 500;
+  font-size: 16px;
   text-align: left;
-  width: 75px;
-  height: 24px;
-  color: var(--primary-white-color);
   margin-bottom: 16px;
+  color: var(--primary-white-color);
 }
 
 .footer-subscribe-form {
